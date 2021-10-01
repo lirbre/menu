@@ -1,3 +1,5 @@
+// Altera a visibilidade 
+
 function classToggle() {
   let content = document.getElementById("toggle");
 
@@ -6,5 +8,4 @@ function classToggle() {
   } else if (content.classList.contains("visible")) {
     content.className = "hidden";
   }
-
 }
