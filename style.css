@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: turquoise;
+    color: white;
+}
+
+.toggleButton {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: black;  
+
+    z-index: 10;
+
+    display: flex; /*Evolution*/
+    justify-content:space-around;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px; /*new*/
+}
+
+
+
+h1 {
+    font-size: 33px;
+    font-style: italic;
+}
+
+a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a:hover{
+    background-color: rgb(3, 42, 100);
+    transition: backgroud 9s;
+}
+
+
+/*Parte2: Menu MOBILE*/
+
+@media (max-width: 800px){
+.toggleButton {
+    display: block;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    min-height: 40vh;
+    min-width: 50vw;
+
+    background-color: rgb(64, 3, 100);
+
+    padding: 10px;
+    padding-right: 0;
+    margin-right: 0;
+
+    transition: all 5s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.visible a {
+   padding-right: 25vw;
+   padding-left: 7vw;
+}
+
+.visible li {
+    width: 40vw;
+}
+
+a:hover{
+    background: none;
+    color: gray;
+}
+
+}
