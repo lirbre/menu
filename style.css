@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+body{
+    width: 100%;
+    margin: 0 auto;  
+    padding: 0;
+    background-color: #368EB3;   
+    color: white;
+    font-size: 20px;
+}
+/*Características Gerais*/
+.width{
+    width: 70%;
+    margin: auto;
+}
+/*Características Gerais*/
+.margins{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+span{
+    font-family: monospace, cursive;
+    font-size: 15px;
+    color: rgb(61, 56, 56);
+}
+.section1 h1{
+    font-size: 35px;
+    font-family: 'Patrick Hand', cursive; 
+    margin: 10px 0; 
+}
+.section1 p{
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.section2{
+    background-color: #73A8BF;
+    border-top: solid 1px #368EB3;
+    border-bottom: solid 1px #368EB3;
+}
+.section2 div{
+    margin-top: 30px;
+    margin-bottom: 30px; /*xx*/
+}
+.section2 h2{
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive;
+    text-transform: uppercase;  
+}
+.section2 li{
+    list-style: none;
+    margin-top: 10px;
+    padding: 10px;
+    border: solid 3px turquoise;
+}
+.section2 h3{
+    text-align: center;
+    padding: 10px 0;
+}
+.section2 p{
+    line-height: 1.3;
+    text-align: justify;
+}
+
+/*Tratando as imagens*/
+.container{ /*new*/
+    display: flex;  
+    align-items:flex-end; 
+}
+.container img{
+    width: 100%;
+    height: 100%;  
+}
+.section2 .container img{
+    margin-left: -133px;
+}
+@media screen and (max-width:900px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+}
+
+.section3 ul{
+    text-align: center;
+    margin: 20px auto;
+}
+.section3 li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 15px;  
+}
+.section3 p{
+    text-align: center;  
+    font-weight: bold;
+}
+.section3 a{
+    color: black;
+}
+
+footer{
+    text-align: center;
+    font-family: monospace, cursive;
+    font-size: 15px;
+    color: rgb(61, 56, 56);
+    margin-bottom: 30px;
+}
+
+/* TRABALHANDO O MENU*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header p{
+    font-size: 55px;
+    text-align: center;
+    font-style: italic;
+    color: white;
+    padding: 5px 0;   
+}
+
+nav.menu{
+/*
+    width: 100%
+    height: 60px;       
+*/
+   border-bottom: 1px solid turquoise;    
+}
+.menu ul{
+    list-style: none;
+    display: table;
+    margin: auto;
+    
+}
+.menu li{
+    display: inline-block;
+    margin: 0 30px;
+    line-height: 40px; 
+}
+.menu a{
+    color: white;
+    text-decoration: none; 
+    font-family: monospace, cursive;
+    font-size: 20px;
+    font-weight: bold;   
+}
+
+.menu a:hover{
+    /*
+    text-decoration: underline;
+    text-decoration-color: turquoise;
+    text-decoration-style: wavy;
+    */
+    text-decoration: underline turquoise;  
+}
